@@ -1,0 +1,87 @@
+/* User Story #1 */
+h1, h2, h3, h4, h5, h6 {
+	color: dodgerblue;
+	font-family: sans-serif;
+}
+
+/* User Story #2 */
+#scoreBoard {
+	font-weight: bold;
+	text-align: center;
+	border: solid;
+	border-block-color: firebrick;
+
+}
+
+/* User Story #3 */
+#teamRoster li {
+	list-style-type: square;
+}
+
+/* User Story #4 */
+#teamRoster > li > a {
+  color: mediumblue;
+  transition: background-color 0.3s;
+}
+
+#teamRoster > li > a:hover {
+  text-decoration: none;
+  background-color: indianred;
+}
+
+/* User Story #5 */
+blockquote {
+  background-color: rosybrown;
+  color: powderblue;
+}
+
+/* User Story #6 */
+#teamRoster > li {
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+  padding: 25px;
+  margin-bottom: 25px;
+}
+
+#teamRoster > li::before {
+  content: " "; 
+  display: inline-block;
+  height: 40px;
+  width: 40px; 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 10px; 
+  opacity: 0.75; 
+}
+
+#teamRoster > li:first-child {
+  background-image: url('https://upload.wikimedia.org/wikipedia/en/4/44/Denver_Broncos_logo.svg'); 
+}
+
+#teamRoster > li:last-child {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/5c/Chicago_Bears_logo.svg'); 
+}
+
+
+#teamRoster > li > img {
+	display: none; 
+}
+
+/* User Story #7 */
+#checkbox-grid li {
+  list-style-type: none;
+
+}
+
+
+/* Stretch Goal #2 */
+#scoreBoard tbody tr:nth-child(even) {
+    background-color: lightgray;
+}
+
+#teamRoster li {
+	font-weight: bold;
+	color: black;
+}
